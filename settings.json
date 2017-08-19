@@ -15,6 +15,7 @@
     "files.trimTrailingWhitespace": true,
     "files.hotExit": "off",
     "window.reopenFolders": "none",
+    "window.title": "${dirty}${folderName}${separator}${activeEditorShort}${separator}${appName}",
     "[csharp]": {
 
     },
