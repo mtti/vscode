@@ -2,6 +2,6 @@ This repository contains my personal configuration for Visual Studio Code. It's 
 
 ## Where to clone this?
 
-* Windows: `C:\Users\$USERNAME\AppData\Roaming\Code\User`
-* macOS: ???
+* Windows: `C:\Users\USERNAME\AppData\Roaming\Code\User`
+* macOS: `/Users/USERNAME/Library/Application Support/Code/User`
 * Linux: ???
