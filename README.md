@@ -4,4 +4,4 @@ This repository contains my personal configuration for Visual Studio Code. It's 
 
 * Windows: `C:\Users\USERNAME\AppData\Roaming\Code\User`
 * macOS: `/Users/USERNAME/Library/Application Support/Code/User`
-* Linux: ???
+* Linux: `/home/USERNAME/.config/Code/User`
