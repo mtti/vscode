@@ -23,7 +23,8 @@
     "workbench.colorTheme": "Monokai",
     "workbench.startupEditor":"none",
     "[csharp]": {
-
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
     },
     "[javascript]": {
         "editor.tabSize": 2,
