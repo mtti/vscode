@@ -10,26 +10,29 @@
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": true,
     "editor.codeLens": false,
+    "editor.links": false,
+    "editor.detectIndentation": false,
+    "extensions.ignoreRecommendations": true,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.hotExit": "off",
     "window.reopenFolders": "none",
     "window.restoreWindows": "none",
-    "workbench.startupEditor":"none",
     "window.title": "${dirty}${folderName}${separator}${activeEditorShort}${separator}${appName}",
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor":"none",
     "[csharp]": {
 
     },
-    "workbench.colorTheme": "Monokai",
     "[javascript]": {
         "editor.tabSize": 2,
-        "editor.detectIndentation": false
+        "editor.detectIndentation": false,
+        "editor.wordBasedSuggestions": false
     },
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80,
         "editor.rulers": [80]
-    },
-    "extensions.ignoreRecommendations": false
+    }
 }
