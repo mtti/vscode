@@ -44,7 +44,7 @@ limitations under the License.
 			"",
             "namespace ${1:namespace}",
             "{",
-            "    public class ${TM_FILENAME:ClassName}$2 : MonoBehaviour",
+            "    public class ${TM_FILENAME/(.*)\\..+$/$1/}$2 : MonoBehaviour",
             "    {",
 			"        $0",
 			"    }",
@@ -53,6 +53,55 @@ limitations under the License.
 		],
 		"description": "Define a new MonoBehaviour"
 	},
+
+    "derp": {
+        "prefix": "derp",
+        "body": "${TM_FILENAME/(.*)Editor\\..+$/$1/}"
+    },
+
+	"Custom editor": {
+		"prefix": "editor",
+		"body": [
+			"using System;",
+            "using UnityEngine;",
+            "using UnityEditor;",
+            "",
+            "namespace ${1:namespace}",
+            "{",
+            "    [CustomEditor(typeof(${TM_FILENAME/(.*)Editor\\..+$/$1/}$2))]",
+            "    public class ${TM_FILENAME/(.*)Editor\\..+$/$1/}$2Editor : UnityEditor.Editor",
+            "    {",
+            "        ${TM_FILENAME/(.*)Editor\\..+$/$1/}$2 component;",
+            "",
+            "        public override void OnInspectorGUI()",
+            "        {",
+            "            DrawDefaultInspector();",
+            "            EditorGUILayout.Separator();",
+            "",
+            "            $0",
+            "        }",
+            "",
+            "        private void OnEnable()",
+            "        {",
+            "            this.component = (${TM_FILENAME/(.*)Editor\\..+$/$1/}$2)target;",
+            "        }",
+			"    }",
+			"}",
+			""
+		],
+		"description": "Define a new MonoBehaviour"
+	},
+
+    "Button": {
+        "prefix": "button",
+        "body": [
+            "if (GUILayout.Button(\"$1\"))",
+            "{",
+            "    $0",
+            "}"
+        ],
+        "description": "Add inspector button"
+    },
 
 	"Inject property": {
 		"prefix": "inprop",
@@ -114,7 +163,7 @@ limitations under the License.
 			"",
             "namespace ${1:namespace}",
             "{",
-            "    public class ${TM_FILENAME:ClassName}$2 : ScriptableObject",
+            "    public class ${TM_FILENAME/(.*)\\..+$/$1/}$2 : ScriptableObject",
             "    {",
 			"        $0",
 			"    }",
