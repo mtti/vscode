@@ -1,6 +1,6 @@
-This repository contains my personal configuration for Visual Studio Code. It's available here in public so that I always have easy access to it. I don't expect it to be useful to anyone else.
+This repository contains my personal configuration for Visual Studio Code. Available here for my own ease of access and probably not useful for anyone else.
 
-It's debatable whether anything in this repo is actually copyrightable (other than perhaps this README file) but in case something is, this repository is released under the Apache License, Version 2.0.
+It's debatable whether anything in this repo is actually copyrightable. For clarity though, anything copyrightable to me in this repo is released under the Apache License, Version 2.0.
 
 ## Where to clone this?
 
