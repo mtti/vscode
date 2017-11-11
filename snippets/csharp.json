@@ -54,11 +54,6 @@ limitations under the License.
 		"description": "Define a new MonoBehaviour"
 	},
 
-    "derp": {
-        "prefix": "derp",
-        "body": "${TM_FILENAME/(.*)Editor\\..+$/$1/}"
-    },
-
 	"Custom editor": {
 		"prefix": "editor",
 		"body": [
