@@ -8,6 +8,19 @@ It's debatable whether anything in this repo is actually copyrightable. For clar
 * macOS: `/Users/USERNAME/Library/Application Support/Code/User`
 * Linux: `/home/USERNAME/.config/Code/User`
 
+## Snippets
+
+### C#
+
+* *Optimized for loop* A for loop for iterating through a collection without calling `Count` on each iteration.
+* *Iterate through listeners* A for loop to call a method on all listeners of a mtti.Inject service.
+* *New MonoBehaviour* Boilerplate for a Unity MonoBehaviour class. Name derived from the file name.
+* *Custom editor* Boilerplate for a custom Unity editor. Name derived from the file name.
+* *Button* Unity inspector button.
+* *Inject property* A property decorated with mtti.Inject.InjectAttribute.
+* *Service* Boilerplate for a mtti.Inject service. Includes interfaces for the service and its listeners, methods for adding and removing listeners. Service name is derived from the file name.
+* *ScriptableObject* A new Unity ScriptableObject class. Name derived from file name.
+
 ## Extensions
 
     $ code --list-extensions
