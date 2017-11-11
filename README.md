@@ -7,3 +7,13 @@ It's debatable whether anything in this repo is actually copyrightable (other th
 * Windows: `C:\Users\USERNAME\AppData\Roaming\Code\User`
 * macOS: `/Users/USERNAME/Library/Application Support/Code/User`
 * Linux: `/home/USERNAME/.config/Code/User`
+
+## Extensions
+
+    $ code --list-extensions
+    2gua.rainbow-brackets
+    EditorConfig.EditorConfig
+    ms-vscode.csharp
+    ms-vscode.wordcount
+    oderwat.indent-rainbow
+    Unity.unity-debug
