@@ -27,6 +27,7 @@ limitations under the License.
     "editor.links": false,
     "editor.parameterHints": false,
     "editor.detectIndentation": false,
+    "emmet.showExpandedAbbreviation": "never",
     "extensions.ignoreRecommendations": true,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
