@@ -28,6 +28,7 @@ limitations under the License.
     "editor.parameterHints": false,
     "editor.detectIndentation": false,
     "editor.minimap.enabled": false,
+    "editor.quickSuggestionsDelay": 1000,
     "emmet.showExpandedAbbreviation": "never",
     "extensions.ignoreRecommendations": true,
     "files.eol": "\n",
