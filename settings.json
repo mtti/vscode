@@ -16,13 +16,13 @@ limitations under the License.
 {
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.rulers": [100],
     "editor.wordWrap": "off",
     "editor.wordWrapColumn": 100,
     "editor.wordBasedSuggestions": false,
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
     "editor.codeLens": false,
     "editor.links": false,
     "editor.parameterHints": false,
@@ -40,18 +40,49 @@ limitations under the License.
     "window.title": "${dirty}${folderName}${separator}${activeEditorShort}${separator}${appName}",
     "workbench.colorTheme": "Monokai",
     "workbench.startupEditor":"none",
+    //"omnisharp.path": null,
+    //"omnisharp.useGlobalMono": "always",
+    "omnisharp.autoStart": true,
     "[csharp]": {
         "editor.formatOnSave": true,
-        "editor.formatOnPaste": true
+        "editor.formatOnPaste": true,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
     },
     "[javascript]": {
         "editor.tabSize": 2,
+        "editor.insertSpaces": true,
         "editor.detectIndentation": false,
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": false,
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
     },
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80,
         "editor.rulers": [80]
-    }
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+    },
+    "explorer.confirmDragAndDrop": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/bower_components": true,
+        "**/jspm_packages": true,
+        "**/node_modules": true
+    },
+    "gitlens.defaultDateStyle": "absolute",
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.blame.dateFormat": "YYYY-MM-DD HH:mm",
+    "gitlens.blame.format": "${message|40?} ${date}",
+    "gitlens.currentLine.dateFormat": "YYYY-MM-DD HH:mm",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm Z",
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 1
 }
