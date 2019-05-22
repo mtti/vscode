@@ -158,6 +158,7 @@ limitations under the License.
 			"",
             "namespace ${1:namespace}",
             "{",
+            "    [CreateAssetMenu(menuName = \"${TM_FILENAME/(.*)\\..+$/$1/}$2\")]",
             "    public class ${TM_FILENAME/(.*)\\..+$/$1/}$2 : ScriptableObject",
             "    {",
 			"        $0",
