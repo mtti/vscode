@@ -17,7 +17,7 @@ limitations under the License.
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "editor.fontSize": 13,
-    "editor.rulers": [100],
+    "editor.rulers": [80, 100],
     "editor.wordWrap": "off",
     "editor.wordWrapColumn": 100,
     "editor.wordBasedSuggestions": false,
@@ -30,6 +30,12 @@ limitations under the License.
     "editor.minimap.enabled": false,
     "editor.quickSuggestionsDelay": 1000,
     "emmet.showExpandedAbbreviation": "never",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
     "extensions.ignoreRecommendations": true,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
@@ -58,6 +64,9 @@ limitations under the License.
     "[typescript]": {
         "editor.tabSize": 2,
     },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+    },
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80,
@@ -84,5 +93,5 @@ limitations under the License.
     "gitlens.currentLine.enabled": false,
     "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm Z",
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 0
 }
