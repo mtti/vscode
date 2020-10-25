@@ -16,7 +16,7 @@ limitations under the License.
 {
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "editor.fontSize": 13,
+    "editor.fontSize": 15,
     "editor.rulers": [80, 100],
     "editor.wordWrap": "off",
     "editor.wordWrapColumn": 100,
