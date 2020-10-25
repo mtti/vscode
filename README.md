@@ -27,10 +27,8 @@ It's debatable whether anything in this repo is actually copyrightable. For clar
     2gua.rainbow-brackets
     dbaeumer.vscode-eslint
     eamodio.gitlens
-    EditorConfig.EditorConfig
     eriklynd.json-tools
-    ms-vscode.csharp
-    ms-vscode.Go
-    ms-vscode.vscode-typescript-tslint-plugin
+    ms-dotnettools.csharp
     ms-vscode.wordcount
     oderwat.indent-rainbow
+    usernamehw.errorlens
