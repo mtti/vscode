@@ -98,58 +98,6 @@ limitations under the License.
         "description": "Add inspector button"
     },
 
-	"Inject property": {
-		"prefix": "inprop",
-		"body": [
-            "[Inject]",
-            "I${1:ServiceName} ${2:propertyName};"
-		],
-		"description": "Inject property"
-	},
-
-	"Service": {
-		"prefix": "service",
-		"body": [
-			"using System;",
-			"using System.Collections.Generic;",
-			"",
-			"using mtti.Inject;",
-			"",
-            "namespace ${1:namespace}",
-            "{",
-            "    public interface I${2:ServiceName}Listener { }",
-			"",
-            "    public interface I${2:ServiceName}Service",
-            "    {",
-			"        void AddListener(I${2:ServiceName}Listener listener);",
-			"        void RemoveListener(I${2:ServiceName}Listener listener);",
-			"    }",
-			"",
-			"    [Service(typeof(I${2:ServiceName}Service))]",
-			"    public class ${2:ServiceName}Service : I${2:ServiceName}Service",
-            "    {",
-            "        private List<I${2:ServiceName}Listener> _listeners",
-			"            = new List<I${2:ServiceName}Listener>();",
-			"",
-            "        public void AddListener(I${2:ServiceName}Listener listener)",
-            "        {",
-			"            if (!_listeners.Contains(listener))",
-            "            {",
-            "                _listeners.Add(listener);",
-			"            }",
-			"        }",
-			"",
-            "        public void RemoveListener(I${2:ServiceName}Listener listener)",
-            "        {",
-			"            _listeners.Remove(listener);",
-			"        }",
-			"    }",
-            "}$0",
-            ""
-		],
-		"description": "Define a new mtti.Inject service"
-	},
-
 	"ScriptableObject": {
 		"prefix": "scriptableobject",
 		"body": [
@@ -167,5 +115,52 @@ limitations under the License.
 			""
 		],
 		"description": "Define a new ScriptableObject"
+  },
+
+	"New IComponentData": {
+		"prefix": "componentdata",
+		"body": [
+			"using Unity.Entities;",
+			"",
+            "namespace ${1:namespace}",
+            "{",
+            "    public class ${TM_FILENAME/(.*)\\..+$/$1/}$2 : IComponentData",
+            "    {",
+			"        $0",
+			"    }",
+			"}",
+			""
+		],
+		"description": "Define a new IComponentData implementation"
+  },
+
+	"New JobComponentSystem": {
+		"prefix": "jobcomponentsystem",
+		"body": [
+			"using Unity.Entities;",
+      "using Unity.Jobs;",
+      "//using Unity.Mathematics;",
+      "//using Unity.Physics;",
+      "//using Unity.Transforms;",
+      "",
+      "namespace ${1:namespace}",
+      "{",
+      "    [AlwaysSynchronizeSystem]",
+      "    public class ${TM_FILENAME/(.*)\\..+$/$1/}$2 : JobComponentSystem",
+      "    {",
+      "        protected override JobHandle OnUpdate(JobHandle inputDeps)",
+      "        {",
+      "            Entities.ForEach(() =>",
+      "            {",
+      "                $0",
+      "            }).Run();",
+      "",
+      "            return default;",
+      "        }",
+      "    }",
+			"}",
+			""
+		],
+		"description": "Define a new IComponentData implementation"
 	}
 }

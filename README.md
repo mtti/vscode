@@ -17,8 +17,6 @@ It's debatable whether anything in this repo is actually copyrightable. For clar
 * *New MonoBehaviour* Boilerplate for a Unity MonoBehaviour class. Name derived from the file name.
 * *Custom editor* Boilerplate for a custom Unity editor. Name derived from the file name.
 * *Button* Unity inspector button.
-* *Inject property* A property decorated with mtti.Inject.InjectAttribute.
-* *Service* Boilerplate for a mtti.Inject service. Includes interfaces for the service and its listeners, methods for adding and removing listeners. Service name is derived from the file name.
 * *ScriptableObject* A new Unity ScriptableObject class. Name derived from file name.
 
 ## Extensions
